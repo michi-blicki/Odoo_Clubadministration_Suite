@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <projectDescription>
-	<name>Odoo_Clubadministration_Suite</name>
+	<name>Odoo_Clubmanagement_Suite</name>
 	<comment></comment>
 	<projects>
 		<project>odoo</project>
