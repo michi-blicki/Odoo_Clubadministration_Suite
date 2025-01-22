@@ -1,11 +1,42 @@
 # -*- coding: utf-8 -*-
 {
-    'name': "Clubmanagement Suite - Global",
+    'name': "Membership Management",
 
-    'summary': "Global settings and configurations",
+    'summary': "Club Membership Management",
 
     'description': """
-        This module includes global settings and configuration for Clubmanagement Suite like general groups and permissions
+        =====================
+        Membership Management
+        =====================
+        Description
+        -----------
+        Enabling business processes throughout whole Membership Lifecycle:
+        - Member registration process
+        - Member specification with additional fields (using *contract* module)
+        - Member classification (Org management in *hr* module)
+        - Member reporting
+        - Member Leave
+        
+        Installation
+        ------------
+        - **Pre-Requisits**: nothing
+        - **Installation**: Just activate the module
+        
+        Configure
+        ---------
+        See Clubmanagement => Configuration => Membership
+        
+        Roadmap / Known Issues
+        ----------------------
+        *no releases yet*
+        
+        Authors
+        -------
+        Michael Blickenstorfer <michi@blicki.ch>
+        
+        History
+        -------
+        18.0.0.1 Pre-Release
     """,
 
     'author': "Michael Blickenstorfer <michi@blicki.ch>",
@@ -24,20 +55,12 @@
 
     # any module necessary for this one to work correctly
     'depends': [
-        'base',
-        'web',
-        'account',
-        'hr',
-        'hr_contract',
+        'clubmanagement_suite'
     ],
 
     # always loaded
     'data': [
-        'security/user_groups.xml',
         # 'security/ir.model.access.csv',
-        'views/mainmenu_view.xml',
-        #'views/views.xml',
-        #'views/templates.xml',
     ],
     
     # only loaded in demonstration mode

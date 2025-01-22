@@ -2,40 +2,41 @@
 
 <odoo>
 	<data>
-		<record id="category_clubadministration_suite" model="ir.module.category">
+		<record id="category_clubmanagement_suite" model="ir.module.category">
 			<field name="name">Clubadministration Suite</field>
 			<field name="sequence" eval="100" />
 			<field name="description">Clubadministration Suite - Main Category</field>
 			<field name="visible" eval="True" />
 		</record>
 		
-		<record id="group_clubadministration_public" model="res.groups">
+		<record id="group_clubmanagement_public" model="res.groups">
 			<field name="name">Public</field>
-			<field name="category_id" ref="category_clubadministration_suite" />
+			<field name="category_id" ref="category_clubmanagement_suite" />
 			<field name="comment">Access to Public available data</field>
 		</record>
 		
-		<record id="group_clubadministration_portal" model="res.groups">
+		<record id="group_clubmanagement_portal" model="res.groups">
 			<field name="name">Portal User</field>
-			<field name="category_id" ref="category_clubadministration_suite" />
+			<field name="category_id" ref="category_clubmanagement_suite" />
 			<field name="comment">Portal user without Backend access</field>
 		</record>
 		
-		<record id="group_clubadministration_user" model="res.groups">
+		<record id="group_clubmanagement_user" model="res.groups">
 			<field name="name">Internal User</field>
-			<field name="category_id" ref="category_clubadministration_suite" />
+			<field name="category_id" ref="category_clubmanagement_suite" />
 			<field name="comment">Default Backend User with limited access</field>
 		</record>
 		
-		<record id="group_clubadministration_official" model="res.groups">
+		<record id="group_clubmanagement_official" model="res.groups">
 			<field name="name">Official User</field>
-			<field name="category_id" ref="category_clubadministration_suite" />
+			<field name="category_id" ref="category_clubmanagement_suite" />
 			<field name="comment">Official Backend User with full access</field>
+			<field name="implied_ids" eval="[(4, ref('group_clubmanagement_user'))]"/>
 		</record>
 		
-		<record id="group_clubadministration_admin" model="res.groups">
+		<record id="group_clubmanagement_admin" model="res.groups">
 			<field name="name">Super Administrator</field>
-			<field name="category_id" ref="category_clubadministration_suite" />
+			<field name="category_id" ref="category_clubmanagement_suite" />
 			<field name="comment">Super Administrator with full access</field>
 		</record>
 	</data>

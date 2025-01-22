@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+	<data>
+		<!-- TOP Menu Item for Club Management Suite -->
+		<menuitem
+			name="Club Management"
+			id="clubmanagement_suite.menu_root"
+			sequence="10"
+			groups="group_clubmanagement_user,group_clubmanagement_official,group_clubmanagement_admin"
+			web_icon="clubmanagement_suite,static/src/img/logo.png"
+		/>
+		
+		<!-- Configuration Menu Item for Club Management Suite -->
+		<menuitem
+			name="Configuration"
+			id="clubmanagement_suite.menu_config_root"
+			parent="clubmanagement_suite.menu_root"
+			sequence="99"
+			groups="group_clubmanagement_admin"
+		/>
+	</data>
+</odoo>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<odoo>
+	<data>
+		<!-- Membership Management Main Menu -->
+		<menuitem
+			name="Membership Management"
+			id="membership_management.menu_root"
+			sequence="100"
+			groups="group_clubmanagement_user"
+			web_icon=""
+		/>
+		
+		<!-- Membership Management Configuration Menu -->
+		<menuitem
+			name="Membership Management"
+			id="membership_management.menu_config_root"
+			parent="clubmanagement_suite.menu_config_root"
+			sequence="100"
+			groups="group_clubmanagement_admin"
+		/>
+	</data>
+</odoo>
