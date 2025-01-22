@@ -1,0 +1,2 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_clubmanagement_suite_clubmanagement_suite,clubmanagement_suite.clubmanagement_suite,model_clubmanagement_suite_clubmanagement_suite,base.group_user,1,1,1,1

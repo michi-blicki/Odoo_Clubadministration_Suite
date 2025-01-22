@@ -1,0 +1,60 @@
+<odoo>
+  <data>
+    <!-- explicit list view definition -->
+<!--
+    <record model="ir.ui.view" id="clubmanagement_suite.list">
+      <field name="name">clubmanagement_suite list</field>
+      <field name="model">clubmanagement_suite.clubmanagement_suite</field>
+      <field name="arch" type="xml">
+        <list>
+          <field name="name"/>
+          <field name="value"/>
+          <field name="value2"/>
+        </list>
+      </field>
+    </record>
+-->
+
+    <!-- actions opening views on models -->
+<!--
+    <record model="ir.actions.act_window" id="clubmanagement_suite.action_window">
+      <field name="name">clubmanagement_suite window</field>
+      <field name="res_model">clubmanagement_suite.clubmanagement_suite</field>
+      <field name="view_mode">list,form</field>
+    </record>
+-->
+
+    <!-- server action to the one above -->
+<!--
+    <record model="ir.actions.server" id="clubmanagement_suite.action_server">
+      <field name="name">clubmanagement_suite server</field>
+      <field name="model_id" ref="model_clubmanagement_suite_clubmanagement_suite"/>
+      <field name="state">code</field>
+      <field name="code">
+        action = {
+          "type": "ir.actions.act_window",
+          "view_mode": "list,form",
+          "res_model": model._name,
+        }
+      </field>
+    </record>
+-->
+
+    <!-- Top menu item -->
+<!--
+    <menuitem name="clubmanagement_suite" id="clubmanagement_suite.menu_root"/>
+-->
+    <!-- menu categories -->
+<!--
+    <menuitem name="Menu 1" id="clubmanagement_suite.menu_1" parent="clubmanagement_suite.menu_root"/>
+    <menuitem name="Menu 2" id="clubmanagement_suite.menu_2" parent="clubmanagement_suite.menu_root"/>
+-->
+    <!-- actions -->
+<!--
+    <menuitem name="List" id="clubmanagement_suite.menu_1_list" parent="clubmanagement_suite.menu_1"
+              action="clubmanagement_suite.action_window"/>
+    <menuitem name="Server to list" id="clubmanagement_suite" parent="clubmanagement_suite.menu_2"
+              action="clubmanagement_suite.action_server"/>
+-->
+  </data>
+</odoo>
